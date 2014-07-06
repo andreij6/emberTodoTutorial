@@ -67,6 +67,7 @@
   <ItemGroup>
     <Content Include="Index.html" />
     <Content Include="Scripts\app.js" />
+    <Content Include="Scripts\controllers\todos_controller.js" />
     <Content Include="Scripts\libs\ember-1.5.1.js" />
     <Content Include="Scripts\libs\ember-data.js" />
     <Content Include="Scripts\libs\handlebars-1.1.2.js" />
