@@ -75,6 +75,7 @@
     <Content Include="Scripts\libs\jquery-1.10.2.js" />
     <Content Include="Scripts\models\todo.js" />
     <Content Include="Scripts\router.js" />
+    <Content Include="Scripts\views\edit_todo_view.js" />
     <Content Include="Styles\normalize.css" />
     <Content Include="Styles\style.css" />
     <Content Include="Web.config" />
