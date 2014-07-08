@@ -17,8 +17,22 @@
 
             //save
             todo.save();
+        },
+
+        clearCompleted: function () {
+            var completed = this.filterBy('isCompleted', true);
+            completed.invoke('deleteRecord');
+            completed.invoke('save');
         }
     },
+
+    hasCompleted: function(){
+        return this.get('completed') > 0;
+    }.property('completed'),
+
+    completed: function(){
+        return this.filterBy('isCompleted', true).get('length');
+    }.property('@each.isCompleted'),
 
     remaining: function () {
         return this.filterBy('isCompleted', false).get('length');
@@ -27,5 +41,9 @@
     inflection: function () {
         var remaining = this.get('remaining');
         return remaining === 1 ? 'todo' : 'todos';
-    }.property('remaining')
+    }.property('remaining'),
+
+    allAreDone: function (key, value) {
+        return !!this.get('length') && this.isEvery('isCompleted');
+    }.property('@each.isCompleted')
 });
