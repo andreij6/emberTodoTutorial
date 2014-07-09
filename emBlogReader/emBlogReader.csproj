@@ -73,6 +73,7 @@
     <Content Include="Scripts\libs\ember-data.js" />
     <Content Include="Scripts\libs\handlebars-1.1.2.js" />
     <Content Include="Scripts\libs\jquery-1.10.2.js" />
+    <Content Include="Scripts\libs\localstorage_adapter.js" />
     <Content Include="Scripts\models\todo.js" />
     <Content Include="Scripts\router.js" />
     <Content Include="Scripts\views\edit_todo_view.js" />
